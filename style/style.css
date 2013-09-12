@@ -20,12 +20,7 @@ font-family: 'Myriad', sans-serif;
 
 body{
 	background-image: url(../img/bg.png);
-
-   text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
-   1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
-   1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
-} 
-
+}
 
 h2{
 	font-weight: normal;
@@ -263,15 +258,15 @@ h2:hover{
 }
 
 .block_description{
-    background-color: #1DC8D9;
+    background-color: rgba(29,200,217,0.9);
     background-repeat: no-repeat;
     bottom: 0;
-   // height: 92px;
     left: 0;
     padding: 7px 15px 0 17px;
     position: absolute;
     visibility: hidden;
     width: 193px;
+    margin-bottom: 5px;
 }
 
 /*
@@ -316,7 +311,7 @@ h2:hover{
 }
 
 .block_date{
-	background-color: #1D99A5;
+	background-color: rgba(29,153,165,0.9);
     margin: -7px 0 7px -17px;
     padding: 3px 0 5px 17px;
     width: 208px;
