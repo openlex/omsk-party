@@ -221,6 +221,7 @@ menu li:hover:before, menu li:active:before{
 
 #block_title{
 	float: left;
+
 }
 
 h2:hover{
@@ -231,16 +232,19 @@ h2:hover{
 .block{
 	float: left;
 	margin: 0 9.5px;
+	height: 224px;
 	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.27);
+	-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.27);
+	box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.27);
 	
 }
 
 .block > img {
     width: 225px;
-	 height: 225px;
-	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.27);
-	-moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.27);
-	box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.27);
+	height: 226px;
+
 }
 
 .block:hover{
@@ -273,7 +277,7 @@ h2:hover{
     //opacity: 0;
     //visibility: hidden;
     width: 193px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 
@@ -322,8 +326,10 @@ h2:hover{
 }
 
 .block_date{
-	background-color: rgba(29,153,165,0.9);
+	background-color: rgba(29, 153, 165, 0.9);
+    
     margin: -7px 0 7px -17px;
+    overflow: hidden;
     padding: 3px 0 5px 17px;
     width: 208px;
 }
@@ -558,17 +564,26 @@ h2:hover{
 	top: 10px
 }
 
+.left_vertical_block{
+float: left;
+margin-right: 20px;
+}
+
+.right_vertical_block{
+float: left;
+margin-bottom: 30px;
+}
 .vertical_block {
 	background-color: #1dc8d9;
 	width: 467px;
-	float: left;
+	//float: left;
 	margin-top:20px; 
 	min-height: 500px;
 }
 
-.vertical_block:nth-child(odd){
+/*.vertical_block:nth-child(odd){
 	margin-right: 20px;
-} 
+} */
 
 .news_block{
 	height: 670px;
@@ -577,3 +592,20 @@ h2:hover{
 .photo_block{
 	height: 1200px;
 }
+
+.video_block{
+	height: 1030px;
+}
+
+.blog_block{
+}
+
+.people_block{
+	background-color: #1dc8d9;
+	height: 200px;
+	width:960px;
+
+}
+
+
+

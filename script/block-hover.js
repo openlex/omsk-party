@@ -1,31 +1,33 @@
-$(document).ready(function() { 
+/*$(document).ready(function() { 
     $(".block_description", this).slideUp(1);
+    $(".block_date",this).slideUp(1,"linear");
 
     $(".block", this).mouseenter(function(){
-        $(".block_description", this).slideDown(350); 
-        
-        
+        $(".block_description", this).slideDown(400,"swing");
+            $(".block_date",this).slideDown(400,"swing");
+            
+      
         
     })
 
     $(".block", this).mouseleave(function(){
-        $(".block_description", this).slideUp(350);
-        
+        $(".block_description", this).slideUp(400,"swing");
+            $(".block_date",this).slideUp(400,"swing");
+            
+                
     })
+}); */
 
-     /*function(){ 
+$(document).ready(function() { 
+    $(".block_description", this).css("height", "0");
+            $(".block_date",this).css("height", "0");
 
-         $(".block_description",this).css('visibility','visible'); 
-        },
+    $(".block", this).mouseenter(function(){
+        $(".block_description", this).animate({height:"130px"},400);
+            $(".block_date",this).animate({height: "37px"},500);})
 
-        function(){ 
+    $(".block", this).mouseleave(function(){
+        $(".block_description", this).animate({height: "0"},400);
+            $(".block_date",this).animate({height: "0"},500);})
 
-        $(".block_description",this).css('visibility','hidden'); 
-
-     }
-     )
-
-     //ОТСТУП У КАЖДОГО НЕЧЁТНОГО ПОЛЯ КОМЕЕНТАРИЯДЛЯ КАТАЛОГА ЗАВДЕНИЙ НА ГЛАВНОЙ
-     //$(".places_comments_field:even").css('margin-right','20px')*/
-    
 }); 
