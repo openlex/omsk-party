@@ -376,9 +376,9 @@ h2:hover{
 	float: right;
 }
 
-#horizontal_block{
+.horizontal_block{
 	float: left;
-	 margin-top: 20px;
+	margin-top: 20px;
 }
 #block_gallery{
 	float: left;
@@ -558,3 +558,22 @@ h2:hover{
 	top: 10px
 }
 
+.vertical_block {
+	background-color: #1dc8d9;
+	width: 467px;
+	float: left;
+	margin-top:20px; 
+	min-height: 500px;
+}
+
+.vertical_block:nth-child(odd){
+	margin-right: 20px;
+} 
+
+.news_block{
+	height: 670px;
+}
+
+.photo_block{
+	height: 1200px;
+}

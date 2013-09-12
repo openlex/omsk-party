@@ -4,6 +4,8 @@ $(document).ready(function() {
     $(".block", this).mouseenter(function(){
         $(".block_description", this).slideDown(350); 
         
+        
+        
     })
 
     $(".block", this).mouseleave(function(){
