@@ -1,21 +1,29 @@
-
 $(document).ready(function() { 
+    $(".block_description", this).slideUp(1);
 
-	 $(".block").hover(
+    $(".block", this).mouseenter(function(){
+        $(".block_description", this).slideDown(350); 
+        
+    })
 
-	 function(){ 
+    $(".block", this).mouseleave(function(){
+        $(".block_description", this).slideUp(350);
+        
+    })
 
-    	 $(".block_description",this).css('visibility','visible'); 
-    	},
+     /*function(){ 
 
-    	function(){ 
+         $(".block_description",this).css('visibility','visible'); 
+        },
 
-    	$(".block_description",this).css('visibility','hidden'); 
+        function(){ 
+
+        $(".block_description",this).css('visibility','hidden'); 
 
      }
      )
 
-	 //ОТСТУП У КАЖДОГО НЕЧЁТНОГО ПОЛЯ КОМЕЕНТАРИЯДЛЯ КАТАЛОГА ЗАВДЕНИЙ НА ГЛАВНОЙ
-     //$(".places_comments_field:even").css('margin-right','20px')
-  	
+     //ОТСТУП У КАЖДОГО НЕЧЁТНОГО ПОЛЯ КОМЕЕНТАРИЯДЛЯ КАТАЛОГА ЗАВДЕНИЙ НА ГЛАВНОЙ
+     //$(".places_comments_field:even").css('margin-right','20px')*/
+    
 }); 

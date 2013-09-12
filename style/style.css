@@ -15,7 +15,7 @@ margin: 0;
 
 html, body {
 height: 100%;
-font-family: 'Myriad', sans-serif;
+font-family: 'Tahoma', sans-serif;
 }
 
 body{
@@ -128,7 +128,7 @@ header{
 menu {
 	float: left;
 	width: 1000px;
-	font-size: 17px;
+	font-size: 15px;
 	margin-left: -82px;
 	
 }
@@ -257,17 +257,26 @@ h2:hover{
 	margin-bottom:40px;
 }
 
+@-moz-document url-prefix() {
+	.block_description{
+    	margin-bottom: 5px;
+	}
+}
+
 .block_description{
     background-color: rgba(29,200,217,0.9);
     background-repeat: no-repeat;
     bottom: 0;
-    left: 0;
+   // left: 0;
     padding: 7px 15px 0 17px;
     position: absolute;
-    visibility: hidden;
+    //opacity: 0;
+    //visibility: hidden;
     width: 193px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
+
+
 
 /*
 .block:first-child .block_description{
@@ -297,17 +306,19 @@ h2:hover{
 
 .block_place{
 	color: #FFFFFF;
-    font-family: 'MyriadBold';
+    //font-family: 'MyriadBold';
+    font-weight: 700;
     font-size: 16px;
     line-height: 10px;
-    margin: 5px 0 5px 0;
+    margin: 7px 0 5px 0;
     text-transform: uppercase;
 }
 
 .block_title{
-	font-size: 14px;
+	font-size: 13px;
 	color: white;
 	margin-bottom: 5px; 
+	margin: 7px 0 7px 0;
 }
 
 .block_date{
@@ -451,20 +462,26 @@ h2:hover{
 	font-size: 16px !important;
 }
 
-.places_comments_variants a:hover{
-	color: rgba(29,200,217,1);
-}
 
 .places_comments_variants a:hover{
 	color: rgba(29,200,217,1);
 }
+
+.places_comments_bad:hover{
+	color: #ad0e2d !important;
+}
+
+.places_comments_good:hover{
+	color: #66ad40 !important;
+}
+
 
 .add_places_comments{
 	text-transform:;
 }
 
 .places_comments_block{
-	margin-top: 35px;
+	margin-top: 25px;
 	
 }
 
@@ -486,15 +503,17 @@ h2:hover{
 .places_comments_field{
 	z-index: 10;
 	float: left;
-	height: 100px;
+	height: 90px;
 	margin-left: -7px;
-    padding: 24px;
+    padding: 15px 20px 20px 20px;
     width: 820px;
 	background-color: white;
 	-webkit-box-shadow: 3px 3px 2px rgba(50, 50, 50, 0.09);
 	-moz-box-shadow:    3px 3px 2px rgba(50, 50, 50, 0.09);
 	box-shadow:         3px 3px 2px rgba(50, 50, 50, 0.09);
-	margin-bottom: 35px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
 }
 
 .places_comments_place{
@@ -531,6 +550,11 @@ h2:hover{
 .places_comments_content{
 	margin-top: 15px;
 	font-size: 15px;
-}
 
+}
+.places_comments_content ~ .a1{
+	position: absolute;
+	right: 25px;
+	top: 10px
+}
 
