@@ -1,13 +1,13 @@
 
-@font-face {
-    font-family: Myriad; /* Имя шрифта */
-    src:url(../fonts/MyriadWebPro.ttf) /* Путь к файлу со шрифтом */
+/*@font-face {
+    font-family: Myriad; /
+    src:url(../fonts/MyriadWebPro.ttf) 
    }
 
    @font-face {
-    font-family: MyriadBold; /* Имя шрифта */
-    src:url(../fonts/MyriadPro-Semibold.otf) /* Путь к файлу со шрифтом */
-   }
+    font-family: MyriadBold; 
+    src:url(../fonts/MyriadPro-Semibold.otf) 
+   }*/
 
 * {
 margin: 0;
@@ -15,7 +15,7 @@ margin: 0;
 
 html, body {
 height: 100%;
-font-family: 'Tahoma', sans-serif;
+font-family: 'Verdana', sans-serif;
 }
 
 body{
@@ -31,7 +31,7 @@ h2{
 .a1{
 	color:#6b7178;
 	text-decoration: underline;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .wrapper {
@@ -98,9 +98,8 @@ header{
   right: 0px;
   height: 8px;
   width: 100%;
-
-  background-color: #d7d8d9;
-  
+  background-color: #2A343E;
+  opacity: 0.12;
 }
 
 .line_content{
@@ -122,13 +121,49 @@ header{
 #logo{
 	font-size: 36px;
 	float: left;
-	padding-top: 22px;
+	padding-top: 25px;
+}
+
+#search_form{
+	float: right;
+	margin-top: 40px;
+}
+
+#search_field{
+	-webkit-border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+	background-color: #242D36;
+    border: medium none;
+    color: #FFFFFF;
+    float: left;
+    height: 32px;
+    padding: 5px 5px 5px 15px;
+    width: 373px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {
+  
+#search_field{
+    height: 42px;
+
+}
+}
+
+#search_field_submit{
+
+}
+#slogan{
+	color: white;
+	font-size: 16px;
+	margin-left: 2px;
+	margin-top: -5px;
 }
 
 menu {
 	float: left;
 	width: 1000px;
-	font-size: 15px;
+	font-size: 13px;
 	margin-left: -82px;
 	
 }
@@ -155,7 +190,7 @@ menu  a{
 menu li:hover, menu li:active{
 	position: relative;
 	background-color: rgba(29,200,217,1);
-	height: 70px;
+	height: 69px;
 	top:-8px;
 	line-height: 64px;
 	z-index: 10;
@@ -166,7 +201,7 @@ menu li:hover, menu li:active{
 menu li:hover:after, menu li:active:after {
   position: absolute;
   content: "";
-  bottom: 1px;
+  bottom: 0px;
   right: -12px;
   background-image: url(../img/menu-bottom-angle.png);
   height: 8px;
@@ -176,7 +211,7 @@ menu li:hover:after, menu li:active:after {
 menu li:hover:before, menu li:active:before{
   position: absolute;
   content: "";
-  bottom: 62px;
+  bottom: 6Zpx;
   right: -12px;
   background-image: url(../img/menu-bottom-angle.png);
   height: 8px;
@@ -195,7 +230,7 @@ menu li:hover:before, menu li:active:before{
 
 #autorisation{
 	float: right;
-	margin-right: 40px
+	margin-right: 0px
 }
 
 #avatar{
@@ -213,10 +248,11 @@ menu li:hover:before, menu li:active:before{
 }
 
 .enter{
-	float: left;
-	margin-top: 18px;
-	color: #eaebec;
-	font-size: 13px;
+	color: #EAEBEC;
+    float: left;
+    font-size: 13px;
+    margin-left: 4px;
+    margin-top: 18px;
 }
 
 #block_title{
@@ -375,11 +411,13 @@ h2:hover{
 #all_blocks{
 	float: right;
 	margin-right: 7px;
+	margin-top: 5px;
 }
 
 
 #block_gallery_controll{
 	float: right;
+	margin-top: 5px;
 }
 
 .horizontal_block{
@@ -555,7 +593,7 @@ h2:hover{
 
 .places_comments_content{
 	margin-top: 15px;
-	font-size: 15px;
+	font-size: 13px;
 
 }
 .places_comments_content ~ .a1{
