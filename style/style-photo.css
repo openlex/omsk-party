@@ -105,15 +105,20 @@
 	opacity:0.5;
 }
 
+.write_photo_comment{
+	//position: absolute;
+	border: solid red 1px;
+}
+
 .reply{
-	width: 100%;
-	margin-left:13px;
-    width: 875px;
-	background-color:#f7f7f7; 
-    -webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.1);
-	-moz-box-shadow:    1px 1px 3px rgba(50, 50, 50, 0.1);
-	box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.1);
-	min-height: 120px;
+	background-color: #F7F7F7;
+    box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.1);
+    margin-left: 26px;
+    margin-top: -26px;
+    min-height: 109px;
+    padding: 20px 5px 0 22px;
+    width: 835px;
+   // display: none;
 }
 
 .reply_textarea{
@@ -122,20 +127,20 @@
     float: left;
     font-family: 'Verdana',sans-serif;
     font-size: 13px;
-    margin: 0 20px;
-    min-height: 82px;
+    min-height: 88px;
     min-width: 830px;
     overflow: auto;
-    position: relative;}
+}
 
 .send_photo_reply_button{
     background-color: #1DC8D9;
     border: medium none;
-    bottom: 16px;
+    bottom: 13px;
     color: #FFFFFF;
-    left: -83px;
+    left: -59px;
     padding: 12px;
-    position: relative;
+    position: absolute;
+   // display: none;
 }
 
 .send_photo_reply_button:hover {
