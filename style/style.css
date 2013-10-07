@@ -306,7 +306,7 @@ h2:hover{
 .block{
 	float: left;
 	margin: 0 9.5px;
-	height: 224px;
+	//height: 224px;
 	position: relative;
 	overflow: hidden;
 	-webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.27);
@@ -632,7 +632,7 @@ h2:hover{
 }
 
 .places_comments_content{
-	margin-top: 7px;
+	margin-top: 9px;
 	font-size: 13px;
 
 }
@@ -685,6 +685,16 @@ margin-bottom: 30px;
 	-moz-box-shadow:    2px 2px 4px rgba(50, 50, 50, 0.06) inset;
 	box-shadow:         2px 2px 4px rgba(50, 50, 50, 0.06) inset;
 }
+
+.news_other a{
+	text-decoration:none;
+	color: #000;
+}
+
+.news_other a:hover{
+	text-decoration:underline;
+}
+	
 
 .news_block{
 	font-size:13px;
