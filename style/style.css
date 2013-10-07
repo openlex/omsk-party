@@ -601,6 +601,7 @@ h2:hover{
     padding: 12px 20px 20px;
     width: 822px;
     z-index: 10;
+    position: relative;
 	
 }
 

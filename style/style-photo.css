@@ -17,10 +17,20 @@
 .photo{
 	margin:15px 5px 5px 16px;
 	float:left;
+	background-color: black;
+	height: 137px;
 }
 
-.photo img:hover {
-	opacity:0.5;
+.photo>img:hover {
+	opacity:0.4;
+}
+
+.ico_photo{
+	float: left;
+}
+
+.photo_icons{
+	position: absolute;
 }
 
 
@@ -115,15 +125,16 @@
     box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.1);
     margin-left: 26px;
     margin-top: -26px;
+    margin-bottom: 25px;
     min-height: 109px;
     padding: 20px 5px 0 22px;
     width: 835px;
-   // display: none;
+    position: relative;
 }
 
 .reply_textarea{
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none;
+    border:  none;
     float: left;
     font-family: 'Verdana',sans-serif;
     font-size: 13px;
@@ -134,13 +145,12 @@
 
 .send_photo_reply_button{
     background-color: #1DC8D9;
-    border: medium none;
-    bottom: 13px;
+    border:  none;
+    bottom: 14px;
     color: #FFFFFF;
-    left: -59px;
+    left: -84px;
     padding: 12px;
     position: absolute;
-   // display: none;
 }
 
 .send_photo_reply_button:hover {
