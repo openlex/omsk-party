@@ -1,7 +1,7 @@
 $(document).ready(function() { 
 	var reply=false;
-	$(".reply").css("margin-top", '-150px');
-	$(".reply").css("display", "none");
+	//$(".reply").css("margin-top", '-150px');
+	//$(".reply").css("display", "none");
 	$(".reply_textarea").css("visibility", "hidden");
 	
 	$(".js_answer",this).click(function() {

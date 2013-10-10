@@ -76,10 +76,16 @@
 	background-color: #1DC8D9;
 	border:none;
 	color:#fff;
-	padding:12px;
+	padding:12px 17px;
 	position:absolute;
 	bottom:16px;
 	left: -83px;
+}
+
+@-moz-document url-prefix() { 
+	.send_photo_comment_button{
+		padding:12px 12px;
+	}
 }
 
 .send_photo_comment_button:hover {
@@ -130,6 +136,7 @@
     padding: 20px 5px 0 22px;
     width: 835px;
     position: relative;
+    display:none;
 }
 
 .reply_textarea{
@@ -155,4 +162,23 @@
 
 .send_photo_reply_button:hover {
 	background-color: #18a3b1;
+}
+
+
+
+
+
+
+
+#upperDiv{
+	height: 100px;
+	width: 200px;
+	background-color: green;
+}
+
+#underDiv{
+	height: 100px;
+	width: 200px;
+	background-color: red;
+	display: none;
 }
