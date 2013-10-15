@@ -4,17 +4,13 @@
 <meta charset="utf-8">
 <title>Главная</title>
 <link rel="stylesheet" type="text/css" href="style/style.css">
-<link rel="stylesheet" type="text/css" href="style/style-photo.css">
 <script src="script/jquery-2.0.3.min.js"></script>
 <script src="script/block-hover.js"> </script>
+<script src="script/photoScripts.js"> </script>
 <script src="script/sliding-comment-block.js"> </script>
 </head>
 
 <body>
-
-
-
-
 
 	<div class="wrapper">
 		<div id="top_advertisement">
@@ -60,12 +56,8 @@
 
 					<form id="search_form">
 						<input id="search_field" name="search" type="search" placeholder="поиск по сайту..."> 
-						<input id="search_field_submit" type="image" src="img/search.jpg">
+						<input id="search_field_submit" type="image" src="img/search.png">
 					</form>
-
-
-
-				
 
 				</div>	
 			</div>
@@ -73,246 +65,390 @@
 
 		<div id="container">
 
-			<div id="content">
-				
-				<div class="main_photo_block">
+			<div id="contentContainer">
+				<div id="content">
 
-					<div class="photo_title">
-					Фотоотчёты / Суббота, 14 сентября / Атлантида  / Во всей красе!  (фотограф Вася Пупкин)
-					</div>
+					<div class="main_photo_block">
 
-					<div class="photo_container">
-
-						<div class="photo">
-							<div class = "photo_icons">
-								<img class="ico_photo" src=img/ico-comment.png>
-								<img class="ico_photo" src=img/ico-heart.png>
-							</div>
-							<img class="img_tumb" src="img/photo1.jpg">
+						<div class="photo_title">
+						Фотоотчёты / Суббота, 14 сентября / Атлантида  / Во всей красе!  (фотограф Вася Пупкин)
 						</div>
 
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
+						<div class="photo_container">
 
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo1.jpg">
-						</div>
-
-						<div class="photo">
-							<img src="img/photo2.jpg">
-						</div>
-
-					</div>
-
-				</div>	
-
-	
-				<div class="photo_comments_block">
-					<span><h3>Комментарии</h3></br></span>
-					<div class="photo_comments_write_block">
-						<div class="comments_avatar">
-									<img src="img/mini-ava.jpg">
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
 								</div>
-
-								<div class="comments">
-									<div class="comments_angle">
-										<img src="img/comment-angle.png">
-									</div>
-									<div class="comments_field writeIn_field">
-										<div>
-										<span> Написать</span>
-										</div>
-										<form name="write_photo_comment">
-										<textarea name="comment_photo" placeholder="Ваш комментарий" class="comment_textarea"> 
-										</textarea>
-										<input class="send_photo_comment_button" type="submit" value="отправить"/>
-										</form>
-									</div>
-								</div>
-						</div>
-
-						<div class="photo_one_commen_block">
-							<div class="comments_avatar">
-									<img src="img/mini-ava.jpg">
+								<img class="img_tumb" src="img/photo1.jpg">
 							</div>
 
-							<div class="comments">
-								<div class="comments_angle">
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo1.jpg">
+							</div>
+
+							<div class="photo">
+								<div class = "photo_icons">
+									<img class="ico_photo" src=img/ico-eye.png> 
+									<span class="ico_photo_count">157 </span>
+									<img class="ico_photo" src=img/ico-comment.png> 
+									<span class="ico_photo_count">22 </span>
+									<img class="ico_photo" src=img/ico-heart.png> 
+									<span class="ico_photo_count">1 </span>
+								</div>
+								<img class="img_tumb" src="img/photo2.jpg">
+							</div>
+
+
+
+							
+
+						</div>
+
+					</div>	
+
+					<div id="commentsBlock">
+						
+						<div>
+							<h2>Комментарии</h2>
+						</div>
+
+						<div class="writeCommentBlock">
+							<div class="commentsBlock_avatar">
+								<img src="img/mini-ava.jpg">
+							</div>
+
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
 									<img src="img/comment-angle.png">
 								</div>
-								<div class="comments_field">
-									<div class="comment_time">
-										22.05.13 / 13:22
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span> Написать</span>
 									</div>
-									<div class="comment_author">
-										Natasha
-									</div>
-									<div class="photo_info">
-										<img class="ico" src=img/ico-comment.png>
-										<span> 17 </span>
+									<form name="write_comment">
+										<textarea name="comment_photo" placeholder="Ваш комментарий..." class="comment_textarea"> 
+										</textarea>
+										<input class="send_comment_button" type="submit" value="отправить"/>
+									</form>
+
+									
+								</div>
+							</div>
+
+						</div>
+
+						<div class="commentBlock">
+							<div class="commentsBlock_avatar">
+								<img src="img/mini-ava.jpg">
+							</div>
+
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
+									<img src="img/comment-angle.png">
+								</div>
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span class="commentBlock_commentsAuthor"> DJ Vasya Pupkin</span>
+										<span class="commentBlock_commentsDate"> 25.04.13 </span>
+										<div class="photo_info">
+										<a href="#">
+											<img class="ico" src=img/ico-comment.png>
+											<span> 17 </span>
+										</a>
+										<a href="#">
 										<img class="ico" src=img/ico-heart.png>
 										<span> 125 </span>
-									</div>
-									
-									
-									<div class="comment_content">
-										Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, обязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавtцы отзывчивые!
+										</a>
 									</div>
 
-									<a class="a2 js_answer"> ответить</a>
-									
+									</div>
+									<div class="commentBlock_commentText">
+										Странно, но поискав на Хабре упоминания текстового редактора Sublime Text 2 я почти ничего не нашел. Спешу исправить положение и рассказать хабраюзерам об этом прекрасном инструменте. Вначале очень коротко расскажу о том чем же он так хорош, потом напишем простой но полезный плагин.
+										<br><br>
+										Пример реальный, из инженерной практики. Перевод выделенного числа в тексте из десятичной в шестнадцатеричную систему счисления. Фича должна быть доступна из главного и контекстного меню а так же по сочетанию клавиш Ctrl+Shift+H. Результат выполнения: число в хексе записанное с использованием цифр и букв верхнего регистра без каких-либо ведущих символов вроде «0x». Если выделенный текст не является числом — ругаемся об этом с статусбаре. Обращаю внимание, что пример намерено упрощен до максимума, чтоб за деталями не потерялась суть: простота создания плагинов для Sublime.
+									</div>
+
+									<div class="a2 js_answer"> ответить </div>
 								</div>
 
 									<form name="write_photo_comment" class="reply">
@@ -320,78 +456,106 @@
 										</textarea>
 										<input class="send_photo_reply_button" type="submit" value="отправить"/>
 									</form>
-							</div>
-						</div>	
 
-
-						<div id = "upperDiv"> upper </div>
-<div id = "underDiv"> under <div> fffffffffffffffff</div> </div>
-
-
-						<div class="photo_one_commen_block">
-							<div class="comments_avatar">
-									<img src="img/mini-ava.jpg">
 							</div>
 
-							<div class="comments">
-								<div class="comments_angle">
+						</div>
+
+
+						<div class="commentBlock">
+							<div class="commentsBlock_avatar">
+								<img src="img/mini-ava.jpg">
+							</div>
+
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
 									<img src="img/comment-angle.png">
 								</div>
-								<div class="comments_field">
-									<div class="comment_time">
-										22.05.13 / 13:22
-									</div>
-									<div class="comment_author">
-										Natasha
-									</div>
-									<div class="photo_info">
-										<img class="ico" src=img/ico-comment.png>
-										<span> 17 </span>
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span class="commentBlock_commentsAuthor"> DJ Vasya Pupkin</span>
+										<span class="commentBlock_commentsDate"> 25.04.13 </span>
+										<div class="photo_info">
+										<a href="#">
+											<img class="ico" src=img/ico-comment.png>
+											<span> 17 </span>
+										</a>
+										<a href="#">
 										<img class="ico" src=img/ico-heart.png>
 										<span> 125 </span>
-									</div>
-									
-									
-									<div class="comment_content">
-										Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, обязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавtцы отзывчивые!
+										</a>
 									</div>
 
-									<a class="a2 js_answer"> ответить</a>
-									
+									</div>
+									<div class="commentBlock_commentText">
+										Странно, но поискав на Хабре упоминания текстового редактора Sublime Text 2 я почти ничего не нашел. Спешу исправить положение и рассказать хабраюзерам об этом прекрасном инструменте. Вначале очень коротко расскажу о том чем же он так хорош, потом напишем простой но полезный плагин.
+										
+									</div>
+
+									<div class="a2 js_answer"> ответить </div>
 								</div>
 
-								<form name="write_photo_comment" class="reply">
-									<textarea name="comment_photo" placeholder="Ваш комментарий" class="reply_textarea">
-									</textarea>
-									<input class="send_photo_reply_button" type="submit" value="отправить"/>
-								</form>
+									<form name="write_photo_comment" class="reply">
+										<textarea name="comment_photo" placeholder="Ваш комментарий" class="reply_textarea">
+										</textarea>
+										<input class="send_photo_reply_button" type="submit" value="отправить"/>
+									</form>
+
 							</div>
+
+						</div>
+
+
+						<div class="writeCommentBlock jsBlockedComment">
+							<div class="commentsBlock_avatar">
+								<img src="img/mini-ava.jpg">
+							</div>
+
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
+									<img src="img/comment-angle.png">
+								</div>
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span> Написать</span>
+									</div>
+									<form name="write_comment">
+										<textarea name="comment_photo" placeholder="Ваш комментарий..." class="comment_textarea"> 
+										</textarea>
+										<input class="send_comment_button" type="submit" value="отправить"/>
+									</form>
+
+									
+								</div>
+							</div>
+
 						</div>
 
 
 
-
-
-					</div>
-
+					
+					</div>	
+				
+				</div>	
+			</div>	
+			
+			<div id="sidebar">	
+				<div class="right_vertical_banners">
+					<div class="v_banner"></div>
+					<div class="v_banner"></div>
+					<div class="v_banner"></div>
+					<div class="v_banner"></div>
 				</div>
+			</div>	
+		
+		</div>
 
-			<div class="right_vertical_banners">
-				<div class="v_banner"></div>
-				<div class="v_banner"></div>
-				<div class="v_banner"></div>
-				<div class="v_banner"></div>
-			</div>
-
-			</div>
-
-	
+		<div class="push">
 		</div>
 
 	</div>
 
 	<footer>
-	
 	</footer>
 
 </body>

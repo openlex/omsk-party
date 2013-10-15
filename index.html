@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <title>Главная</title>
 <link rel="stylesheet" type="text/css" href="style/style.css">
-
+<link rel="stylesheet" type="text/css" href="style/slider.css">
 <script src="script/jquery-2.0.3.min.js"></script>
 <script src="script/block-hover.js"> </script>
+<script src="script/slider.js"></script>
+<script src="script/sliding-comment-block.js"> </script>
 </head>
-
 <body>
 	<div class="wrapper">
-		<div id="top_advertisement">
-			<div id="top_banner">
-			</div>
-		</div>	
+		<div id="top_banner">
+		</div>
+
 		<div id="menu_bg">
 
 			<div id="top_line">
@@ -54,42 +54,43 @@
 
 					<form id="search_form">
 						<input id="search_field" name="search" type="search" placeholder="поиск по сайту..."> 
-						<input id="search_field_submit" type="image" src="img/search.jpg">
+						<input id="search_field_submit" type="image" src="img/search.png">
 					</form>
-
-
-
-				
 
 				</div>	
 			</div>
 		</div>
 
-		<div id="container">
+	<div id="container">
 
+		<div id="contentContainer">
 			<div id="content">
-				
-				<div class="horizontal_block event_block">
-					<div id="block_top">
-						<div id="block_title"><h2>АФИША МЕРОПРИЯТИЙ</h2></div>	
-						<div id="add_block">
-							<span>+ добавить</span>
-						</div>
-						<div id="block_gallery_controll">
-							<  >
-						</div>
-						<div id="all_blocks">
-							<a class="a1" href="#">все мероприятия</a>
-						</div>
-						
-					</div>
 
-					<div id="block_gallery">
-						
-						<div class="block">
-							<img src="img/event1.jpg">
-							
-							<div class="block_description">
+	<div class="horizontal_block event_block">
+
+		<div id="block_top">
+			<div id="block_title"><h2>АФИША МЕРОПРИЯТИЙ</h2></div>	
+			<div id="add_block">
+				<span>+ добавить</span>
+			</div>
+			<div class="gallary_controllElements">
+				<div class="gallaryBlock_controllElements_left"><img src="img/arrow.png"/></div>
+				<div class="gallaryBlock_controllElements_right"><img src="img/arrow.png"/></div>
+			</div>
+			<div id="all_blocks">
+				<a class="a1" href="#">все мероприятия</a>
+			</div>
+
+		</div>
+				<div class="gallary">
+
+
+		<div class="gallaryBlock">
+			<div class="gallaryBlock_container">
+				
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event1.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
 									25
@@ -109,67 +110,14 @@
 									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
 								</div>
 							</div> 
-						</div>
+				</div>
 
-						<div class="block">
-							<img src="img/event2.jpg">
-							
-							<div class="block_description">
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event2.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
-									01
-									</div>
-									<div class="mounth">
-									янавря
-									</div>
-									<div class="day">
-									среда
-									</div>
-
-								</div>
-								<div class="block_place"> 
-									Ангар 
-								</div>
-								<div class="block_title">
-									наверноятное приключение французов в россии 
-								</div>
-							</div> 
-						</div>
-
-
-						<div class="block">
-							<img src="img/event3.jpg">
-							
-							<div class="block_description">
-								<div class="block_date"> 
-									<div class="date">
-									35
-									</div>
-									<div class="mounth">
-									декабря
-									</div>
-									<div class="day">
-									воскресенье
-									</div>
-
-								</div>
-								<div class="block_place"> 
-									ДК Малунцева 
-								</div>
-								<div class="block_title">
-									Мэрлин Мэнсон в Омске! 
-								</div>
-							</div> 
-						</div>
-
-
-						<div class="block">
-							<img src="img/event4.jpg">
-							
-							<div class="block_description">
-								<div class="block_date"> 
-									<div class="date">
-									10
+									25
 									</div>
 									<div class="mounth">
 									марта
@@ -179,19 +127,164 @@
 									</div>
 
 								</div>
-								<div class="block_place"> Ангар </div>
+								<div class="block_place"> 
+									Химик
+								</div>
 								<div class="block_title">
-									Дискотека 90 Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп Карп 
-								</div> 
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
 							</div> 
-						</div>
+				</div>
 
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event3.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
 
-						
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event4.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event1.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event2.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event3.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event4.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
 					</div>
 
-
 				</div>
+			</div>
+
+		</div>
+	</div>
 
 
 				<div class="middle_horisontal_banners">
@@ -200,47 +293,49 @@
 				</div>
 
 
-				<div class="horizontal_block place_block">
-					<div id="block_top">
-						<div id="block_title"><h2>ТОП ЗАВЕДЕНИЙ</h2></div>	
-						<div id="add_block">
-							<span>+ добавить</span>
-						</div>
-						<div id="block_gallery_controll">
-							<  >
-						</div>
-						<div id="all_blocks">
-							<a class="a1" href="#">все заведения</a>
-						</div>
-						
-					</div>
+	<div class="horizontal_block place_block">
+					
+		<div id="block_top">
+			<div id="block_title"><h2>ТОП ЗАВЕДЕНИЙ</h2></div>	
+			<div id="add_block">
+				<span>+ добавить</span>
+			</div>
+			<div class="gallary_controllElements">
+				<div class="gallaryBlock_controllElements_left"><img src="img/arrow.png"/></div>
+				<div class="gallaryBlock_controllElements_right"><img src="img/arrow.png"/></div>
+			</div>
+			<div id="all_blocks">
+				<a class="a1" href="#">все заведения</a>
+			</div>
 
-					<div id="block_gallery">
-						
-						<div class="block place_img_conainer">
-							<img src="img/event1.jpg">
-							
-							<div class="block_description">
+		</div>
+				<div class="gallary">
+
+
+		<div class="gallaryBlock">
+			<div class="gallaryBlock_container">
+				
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event1.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
-									*****
-									</div>
-									
-
-								</div>
-								<div class="block_place"> 
 									Zебры
+									</div>
+									<div class="rate"> 
+										*****
+									</div>
 								</div>
+								
 								<div class="block_title">
-									суши-бар, японская кухня
+									суши-бар </br> время работы:</br> пн-сб 8:00-23:00</br> вс: 10:00-22:00
 								</div>
 							</div> 
-						</div>
+				</div>
 
-						<div class="block place_img_conainer">
-							<img src="img/event2.jpg">
-							
-							<div class="block_description">
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event2.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
 									25
@@ -260,13 +355,11 @@
 									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
 								</div>
 							</div> 
-						</div>
+				</div>
 
-
-						<div class="block place_img_conainer">
-							<img src="img/event3.jpg">
-							
-							<div class="block_description">
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event3.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
 									25
@@ -286,13 +379,11 @@
 									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
 								</div>
 							</div> 
-						</div>
+				</div>
 
-
-						<div class="block place_img_conainer">
-							<img src="img/event4.jpg">
-							
-							<div class="block_description">
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event4.jpg"/>
+					<div class="block_description">
 								<div class="block_date"> 
 									<div class="date">
 									25
@@ -312,11 +403,108 @@
 									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
 								</div>
 							</div> 
-						</div>
+				</div>
 
-						
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event1.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event2.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event3.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
+				</div>
+
+				<div class="galleryBlock_imgBlock">
+					<img src="img/pictures/event4.jpg"/>
+					<div class="block_description">
+								<div class="block_date"> 
+									<div class="date">
+									25
+									</div>
+									<div class="mounth">
+									марта
+									</div>
+									<div class="day">
+									воскресенье
+									</div>
+
+								</div>
+								<div class="block_place"> 
+									Химик
+								</div>
+								<div class="block_title">
+									ЕЖЕГОДНОЕ МЕЖВУЗОВСКОЕ ПОСВЯЩЕНИЕ 
+								</div>
+							</div> 
 					</div>
 
+				</div>
+			</div>
+
+		</div>
 					<div id="places_other">
 						<ul>
 							<li><a href="#"> Зебры </a></li>
@@ -358,175 +546,99 @@
 							</a>
 						</div>
 
-						
 
-						<div class="comments_block">
 
-							<div class="comments_avatar">
+
+						<div class="commentBlock">
+							<div class="commentsBlock_avatar">
 								<img src="img/mini-ava.jpg">
 							</div>
 
-							<div class="comments">
-								<div class="comments_angle">
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
 									<img src="img/comment-angle.png">
 								</div>
-
-								<div class="comments_field">
-
-									<div class="comments_place">
-									Вавилон
-									</div> 
-									
-
-									<div class="comments_title">
-									Беспонтовый кинотеатр!
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span class="commentBlock_commentsPlace"> Вавилон</span>
+										<span class="commentBlock_commentsTitle"> Ужасное место!</span>
+										<span class="commentBlock_commentsDate"> 25.04.13 </span>
+										<div class="photo_info">
+										<a href="#">
+											<img class="ico" src=img/ico-comment.png>
+											<span> 17 </span>
+										</a>
+										<a href="#">
+										<img class="ico" src=img/ico-heart.png>
+										<span> 125 </span>
+										</a>
 									</div>
 
-									<div class="comments_icon">
-										<img src="img/comment.png">
+									</div>
+									<div class="commentBlock_commentText">
+										Странно, но поискав на Хабре упоминания текстового редактора Sublime Text 2 я почти ничего не нашел. Спешу исправить положение и рассказать хабраюзерам об этом прекрасном инструменте. Вначале очень коротко расскажу о том чем же он так хорош, потом напишем простой но полезный плагин.
+										
 									</div>
 
-									<div class="comments_count">
-									15
-									</div>
-
-
-									<div class="comments_content">
-									Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, бязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавцы отзывчивые!
-									</div>
-									<a class="a1"> ответить</a>
+									<div class="a2 js_answer"> ответить </div>
 								</div>
 
+									<form name="write_photo_comment" class="reply">
+										<textarea name="comment_photo" placeholder="Ваш комментарий" class="reply_textarea">
+										</textarea>
+										<input class="send_photo_reply_button" type="submit" value="отправить"/>
+									</form>
+
 							</div>
+
 						</div>
 
 
 
+					
 
-						<div class="comments_block">
-
-							<div class="comments_avatar">
+						<div class="commentBlock">
+							<div class="commentsBlock_avatar">
 								<img src="img/mini-ava.jpg">
 							</div>
 
-							<div class="comments">
-								<div class="comments_angle">
+							<div class="commentsBlock_fieldBlock">
+								<div class="commentsBlock_fieldBlock_angle">
 									<img src="img/comment-angle.png">
 								</div>
-
-								<div class="comments_field">
-
-									<div class="comments_place">
-									Вавилон
-									</div> 
-									
-
-									<div class="comments_title">
-									Беспонтовый кинотеатр!
+								<div class="commentsBlock_fieldBlock_field">
+									<div>
+										<span class="commentBlock_commentsPlace"> Атриум</span>
+										<span class="commentBlock_commentsTitle"> Клёвый кинотеатр</span>
+										<span class="commentBlock_commentsDate"> 25.04.13 </span>
+										<div class="photo_info">
+										<a href="#">
+											<img class="ico" src=img/ico-comment.png>
+											<span> 17 </span>
+										</a>
+										<a href="#">
+										<img class="ico" src=img/ico-heart.png>
+										<span> 125 </span>
+										</a>
 									</div>
 
-									<div class="comments_icon">
-										<img src="img/comment.png">
+									</div>
+									<div class="commentBlock_commentText">
+										Странно, но поискав на Хабре упоминания текстового редактора Sublime Text 2 я почти ничего не нашел. Спешу исправить положение и рассказать хабраюзерам об этом прекрасном инструменте. Вначале очень коротко расскажу о том чем же он так хорош, потом напишем простой но полезный плагин.
+										
 									</div>
 
-									<div class="comments_count">
-									15
-									</div>
-
-
-									<div class="comments_content">
-									Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, бязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавцы отзывчивые!
-
-									</div>
-									<a class="a1"> ответить</a>
-								</div>
-							</div>
-						</div>
-
-
-
-
-						<div class="comments_block">
-
-							<div class="comments_avatar">
-								<img src="img/mini-ava.jpg">
-							</div>
-
-							<div class="comments">
-								<div class="comments_angle">
-									<img src="img/comment-angle.png">
+									<div class="a2 js_answer"> ответить </div>
 								</div>
 
-								<div class="comments_field">
-
-									<div class="comments_place">
-									Вавилон
-									</div> 
-									
-
-									<div class="comments_title">
-									Беспонтовый кинотеатр!
-									</div>
-
-									<div class="comments_icon">
-										<img src="img/comment.png">
-									</div>
-
-									<div class="comments_count">
-									15
-									</div>
-
-
-									<div class="comments_content">
-									Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, бязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавцы отзывчивые!
-									</div>
-									<a class="a1"> ответить</a>
-								</div>
+									<form name="write_photo_comment" class="reply">
+										<textarea name="comment_photo" placeholder="Ваш комментарий" class="reply_textarea">
+										</textarea>
+										<input class="send_photo_reply_button" type="submit" value="отправить"/>
+									</form>
 
 							</div>
-						</div>
 
-
-
-
-						<div class="comments_block">
-
-							<div class="comments_avatar">
-								<img src="img/mini-ava.jpg">
-							</div>
-
-							<div class="comments">
-								<div class="comments_angle">
-									<img src="img/comment-angle.png">
-								</div>
-
-								<div class="comments_field">
-
-									<div class="comments_place">
-									Вавилон
-									</div> 
-									
-
-									<div class="comments_title">
-									Беспонтовый кинотеатр!
-									</div>
-
-									<div class="comments_icon">
-										<img src="img/comment.png">
-									</div>
-
-									<div class="comments_count">
-									15
-									</div>
-
-
-									<div class="comments_content">
-									Хочу поблагодарить продавцов в сети ювелирных магазинов "Кристалл мечты". Была в разных магазинах. Всегда отзывчивые, бязательно порекомендуют, посоветуют. Я обычно очень щепетильно отношусь к выбору, многим не хватает терпения, а тут продавцы отзывчивые!
-									</div>
-									<a class="a1"> ответить</a>
-								</div>
-
-							</div>
 						</div>
 
 
@@ -606,38 +718,36 @@
 					БЛОГИ 
 				</div> 
 			</div>
-/
-			<div class="people_block">
-				Люди
-			</div>
+
 
 
 				<div class="push">
-			  	fff
+			  	
 				</div>
 
-			
 
 			</div>
-
-			<div class="right_vertical_banners">
+		</div>
+		<div id="sidebar">
 				<div class="v_banner"></div>
 				<div class="v_banner"></div>
 				<div class="v_banner"></div>
 				<div class="v_banner"></div>
-			</div>
-
 		</div>
 
 	</div>
 
+
+
+	<div class="push">
+			  	
+	</div>
+
+	</div>
+
 	<footer>
-	
+
 	</footer>
 
-
-
-<div id = "upperDiv"> upper </div>
-<div id = "underDiv"> under </div>
 </body>
 </html>
